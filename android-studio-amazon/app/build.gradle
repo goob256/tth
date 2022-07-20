@@ -6,8 +6,8 @@ android {
         applicationId "com.b1stable.tth"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 23
-        versionName '1.2.8'
+        versionCode 25
+        versionName '1.2.9'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         multiDexEnabled true
         ndk {
@@ -22,9 +22,7 @@ android {
     signingConfigs {
         release {
             storeFile file('/Users/trent/code/new-release-key.jks')
-            storePassword 'MaggieDog!7'
             keyAlias 'my-alias'
-            keyPassword 'MaggieDog!7'
         }
     }
     buildTypes {

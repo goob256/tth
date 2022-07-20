@@ -113,7 +113,7 @@ static void activate_button(Onscreen_Button button, bool down, bool is_repeat)
 			if (b2_enabled) {
 				e.type = type;
 				e.keyboard.is_repeat = is_repeat;
-				e.keyboard.code = globals->key_back;
+				e.keyboard.code = globals->key_die;
 			}
 			else {
 				return;

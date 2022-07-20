@@ -36,6 +36,7 @@
                   android:label="@string/app_name"
                   android:screenOrientation="sensorLandscape"
                   android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+		  android:exported="false"
                   >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,7 +49,9 @@
         </activity>
 
 	<activity android:name=".License_Viewer_Activity"
-		android:parentActivityName=".TTH_Activity" >
+		android:parentActivityName=".TTH_Activity"
+		android:exported="false"
+		>
 		<!-- The meta-data tag is required if you support API level 15 and lower -->
 		<meta-data
 			android:name="android.support.PARENT_ACTIVITY"

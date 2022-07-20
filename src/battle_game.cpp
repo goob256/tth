@@ -1836,8 +1836,10 @@ void Battle_Game::end_combo()
 	GLOBALS->getting_combo = false;
 	shim::convert_directions_to_focus_events = true;
 	GLOBALS->onscreen_controller_was_enabled = osc_enabled;
+	/*
 	wedge::set_onscreen_controller_generates_b1_b2(false);
 	wedge::set_onscreen_controller_b2_enabled(false);
+	*/
 	delete detector;
 	detector = nullptr;
 }

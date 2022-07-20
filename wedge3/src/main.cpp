@@ -286,6 +286,7 @@ bool start(util::Size<int> base_screen_size, util::Size<int> window_size)
 	shim::user_render = draw_all;
 
 	start_onscreen_controller(true);
+	set_onscreen_controller_b2_enabled(true);
 
 	shim::get_way_points = get_way_points;
 
