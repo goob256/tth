@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.b1stable.tth"
+      android:installLocation="auto">
+
+    <!-- OpenGL ES 2.0 -->
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+
+    <!-- Allow writing to external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:label="@string/app_name"
+                 android:allowBackup="true"
+                 android:theme="@style/my_style"
+                 android:hardwareAccelerated="true"
+                 android:isGame="true"
+                 android:icon="@mipmap/ic_launcher"
+                 android:logo="@mipmap/ic_launcher"
+                 android:banner="@drawable/banner">
+
+	<!--Not supporting portrait with this game-->
+        <!--<activity android:name="TTH_Activity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="fullSensor"
+                  android:configChanges="keyboard|keyboardHidden|navigation|screenSize|orientation"
+                  >-->
+        <activity android:name="TTH_Activity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="sensorLandscape"
+                  android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+	<activity android:name=".License_Viewer_Activity"
+		android:parentActivityName=".TTH_Activity" >
+		<!-- The meta-data tag is required if you support API level 15 and lower -->
+		<meta-data
+			android:name="android.support.PARENT_ACTIVITY"
+			android:value=".TTH_Activity" />
+	</activity>
+
+        <meta-data android:name="isGame" android:value="true"/>
+	<meta-data android:name="android.max_aspect" android:value="2.1"/> <!-- we support anything, really -->
+	<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id" />
+	<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest> 

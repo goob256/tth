@@ -1,0 +1,10 @@
+GRAPHICS
+VIKTOR YANEV - tile art/battle bg
+GABRIEL G - logo/key art
+GABRIEL CANELLAS - enemy art
+
+MUSIC
+TRENT GAMBLIN
+
+CODE
+TRENT GAMBLIN

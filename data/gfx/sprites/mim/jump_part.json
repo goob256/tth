@@ -1,0 +1,42 @@
+{ "frames": {
+   "jump 0.tga": {
+    "frame": { "x": 0, "y": 0, "w": 16, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 20 },
+    "sourceSize": { "w": 16, "h": 20 },
+    "duration": 256
+   },
+   "jump 1.tga": {
+    "frame": { "x": 16, "y": 0, "w": 16, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 20 },
+    "sourceSize": { "w": 16, "h": 20 },
+    "duration": 48
+   },
+   "jump 2.tga": {
+    "frame": { "x": 32, "y": 0, "w": 16, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 20 },
+    "sourceSize": { "w": 16, "h": 20 },
+    "duration": 48
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9-x64",
+  "image": "C:\\Users\\trent\\code\\tth\\data\\gfx\\sprites\\mim\\jump_part.tga",
+  "format": "RGBA8888",
+  "size": { "w": 48, "h": 20 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

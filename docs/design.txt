@@ -1,0 +1,51 @@
+Game about a Bible topic Babel. square tower to heaven 100
+levels. nothing at the top whatsoever just black sky no stars. easy
+jrpg battles on the way up. just a handful of enemies that doesn't get any
+more difficult at all. 7 demons as enemies. Pick up mushrooms from chests
+(that's all you get, they fill health)
+
+ATTACK USE RUN
+
+Very balanced so mushrooms get you through without any difficulty. Make mushroom
+drops relative to amount you have. static image enemies. Low density maze.
+Bfxr sfx. Tower to Heaven No dialogue Thin Pixel
+slightly serif font for logo with top of tower at bottom and black sky with
+stars
+
+Final stair in the middle with a very small area on top.
+
+God dialogue: complete gibberish glitches
+Make stairs disappear and stars dim then glitch voice
+maybe have a little nebulas
+
+Have a handful of predesigned levels and pick one randomly. Don't need a diff
+random seed just seed it with the floor num. Maybe 7 types.
+
+Add exits with code. Different combos may be dependant on where exits can be.
+
+Enemies:
+Bat with white haired girl head
+
+fade is smooth but starts at top first, then fades the bottom in first
+
+maybe he rips his clothes off at top
+
+one screen menu. arrows, activate, back
+
+Lo-fi sound option 11025 hz?
+
+Random gen algo:
+Add 3-5 walls. 1) don't add edge walls at edge. 2) make sure no walls touch each other 3) add walls at the ends of other walls sometimes 4) pick a random number 1-3 tiles and build out until failing also pick a direction 5) if it fails immediately try again up to X number of times 6) then randomly place the exit 1-2 tiles from the edge and in the opposite half L
+
+Lots of chests in blue areas every 10 levels
+
+Music:
+title
+start
+area
+area10?
+battle
+gameover
+end
+
+Use Noise texture to randomize stars then move them back into a big steaming cup of coffee

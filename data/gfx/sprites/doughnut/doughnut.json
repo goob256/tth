@@ -1,0 +1,50 @@
+{ "frames": {
+   "doughnut 0.tga": {
+    "frame": { "x": 0, "y": 0, "w": 12, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 12 },
+    "sourceSize": { "w": 12, "h": 12 },
+    "duration": 500
+   },
+   "doughnut 1.tga": {
+    "frame": { "x": 12, "y": 0, "w": 12, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 12 },
+    "sourceSize": { "w": 12, "h": 12 },
+    "duration": 500
+   },
+   "doughnut 2.tga": {
+    "frame": { "x": 24, "y": 0, "w": 12, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 12 },
+    "sourceSize": { "w": 12, "h": 12 },
+    "duration": 500
+   },
+   "doughnut 3.tga": {
+    "frame": { "x": 36, "y": 0, "w": 12, "h": 12 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 12 },
+    "sourceSize": { "w": 12, "h": 12 },
+    "duration": 500
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9-x64",
+  "image": "C:\\Users\\trent\\code\\tth\\data\\gfx\\sprites\\doughnut\\doughnut.tga",
+  "format": "RGBA8888",
+  "size": { "w": 48, "h": 12 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

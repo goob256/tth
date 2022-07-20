@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir ~/code/t
+cd ~/code/tth/data
+compress_dir
+cp ~/code/tth/data.cpa ~/code/tth/build/tth ~/code/tth/docs/3rd_party.html ~/code/t

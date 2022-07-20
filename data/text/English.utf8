@@ -1,0 +1,101 @@
+0:Unknown...
+5:Received %d %s!
+6:Received %s!
+10:Quit to title?
+12:You died in battle!
+49:Play
+50:Settings
+51:Quit
+53:Tower Base
+59:Choose a Slot
+60:Yes
+61:No
+62:Load
+64:Erase
+65:Select Action
+66:Erase this game?
+69:OK
+70:Select Difficulty
+83:Language
+84:Video
+85:Audio
+86:Keyboard
+87:Gamepad
+88:Miscellaneous
+92:Licenses
+93:English
+95:This menu will now exit.
+96:Screen Resolution
+97:Window Size
+98:Fullscreen
+99:Windowed
+100:Select Mode
+104:Apply Changes?
+105:Press a key...
+106:Press a button...
+107:Keyboard Controls
+108:Gamepad Controls
+109:Conflict found! Discard?
+115:Fullscreen
+116:Left
+117:Right
+118:Up
+119:Down
+127:Rumble Enabled
+128:Miscellaneous Settings
+131:Back
+139:Action
+156:Save
+157:Overwrite this save?
+158:Game saved!
+159:Error saving game!
+167:Use on-screen controller
+174:No doughnuts!
+175:Couldn't run!
+176:Ran away...
+192:Press OK to continue.
+253:No settings are available at this time!
+322:Displaying the licenses failed!
+515:- EMPTY -
+516:*** CORRUPT ***
+527:Exit fullscreen mode to view licenses?
+531:An error occurred!
+548:???
+570:© 2021 b1stable
+578:BACK
+579:Doughnut
+580:doughnuts
+581:Doughnuts
+582:HP
+583:Menu
+584:Mim
+585:Prerendered Music
+586:Long ways up...
+587:Level %d...
+588:Received Doughnut!
+589:Received %d Doughnuts!
+590:Level %d
+591:Beholder
+592:Bonk
+593:Run
+594:Werewolf
+595:100 Levels
+596:1000 Levels
+597:GRAPHICS
+598:MUSIC
+599:CODE
+600:Ooze
+601:Mermaid
+602:Skeleton
+603:Phoenix
+604:Alraune
+605:Achievements
+606:Die
+607:Casual
+608:Speed-Run
+609:Skipped %d Levels!
+610:Samurai Sword
+611:Slice
+612:Audio On
+613:Audio Settings
+614:Audio

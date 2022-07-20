@@ -1,0 +1,82 @@
+{ "frames": {
+   "hit 0.tga": {
+    "frame": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 1.tga": {
+    "frame": { "x": 20, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 2.tga": {
+    "frame": { "x": 40, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 3.tga": {
+    "frame": { "x": 60, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 4.tga": {
+    "frame": { "x": 80, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 5.tga": {
+    "frame": { "x": 100, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 6.tga": {
+    "frame": { "x": 120, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   },
+   "hit 7.tga": {
+    "frame": { "x": 140, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 16
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9-x64",
+  "image": "C:\\Users\\trent\\code\\tth\\data\\gfx\\sprites\\hit\\hit.tga",
+  "format": "RGBA8888",
+  "size": { "w": 160, "h": 20 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

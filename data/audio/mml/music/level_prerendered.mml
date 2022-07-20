@@ -1,0 +1,23 @@
+@S0 = { level_prerendered.flac }
+
+A t250 @S0
+A o6c16r8.r16r8.r16r4r16r16r16
+A r16r8.r16r8.r16r1
+A r1
+A r4..
+A r16r8.r16r8.r16r4r16r16r16
+A r16r8.r16r8.r16r1
+A r1
+A r4..
+A r16r8.r16r8.r16r4r16r16r16
+A r16r8.r16r8.r16r1
+A r1
+A r4..
+A r8r8r8r2r8
+A r8r8r8r4.r8r4.
+A r8r8r8r8r8r8
+A r8r8r8r8r8r8r8r8
+A r8r8r8r2r8
+A r8r8r8r4.r8r4.
+A r8r8r8r8r8r8
+A r8r8r8r8r8r8r8r8
