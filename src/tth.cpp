@@ -26,6 +26,8 @@ bool autosave_help_shown = false;
 bool easy_combos = true;
 bool simple_turn_display = false;
 
+Uint32 speedrun_start;
+
 #ifdef GOOGLE_PLAY
 #include <jni.h>
 
@@ -219,6 +221,11 @@ int main(int argc, char **argv)
 
 #ifdef GOOGLE_PLAY
 		start_google_play_games_services();
+#endif
+
+#ifdef STEAMWORKS
+		util::load_steam_leaderboard("100");
+		util::load_steam_leaderboard("1000");
 #endif
 
 		if (wedge::go() == false) {

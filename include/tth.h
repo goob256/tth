@@ -20,6 +20,7 @@ extern int screen_h;
 extern bool autosave_help_shown;
 extern bool easy_combos;
 extern bool simple_turn_display;
+extern Uint32 speedrun_start;
 
 extern int orig_argc;
 extern char **orig_argv;

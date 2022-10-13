@@ -453,6 +453,20 @@ public:
 		gfx::add_notification(util::string_printf(GLOBALS->game_t->translate(587)/* Originally: Level %d... */.c_str(),  level+1));
 
 		if (level == INSTANCE->get_num_levels()-1) {
+			if (GLOBALS->speed_run) {
+				Uint32 now = SDL_GetTicks();
+				Uint32 elapsed = now - speedrun_start;
+				int seconds = elapsed / 1000;
+#ifdef STEAMWORKS
+				int nl = INSTANCE->get_num_levels();
+				if (nl == 100) {
+					util::set_steam_leaderboard("100", seconds);
+				}
+				else if (nl == 1000) {
+					util::set_steam_leaderboard("1000", seconds);
+				}
+#endif
+			}
 			if (GLOBALS->prerendered_music) {
 				audio::play_music("music/end_prerendered.mml");
 			}

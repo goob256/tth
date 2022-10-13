@@ -68,7 +68,7 @@ goto done
 rem copy release\shim3.dll ..\..\t
 goto done
 :wedge3
-cd c:\users\trent\code\tth\wedge3\build
+cd c:\users\trent\code\wedge3\build
 if %CFG%=="release" goto wedge3_release
 rem copy relwithdebinfo\wedge3.dll ..\..\t
 goto done

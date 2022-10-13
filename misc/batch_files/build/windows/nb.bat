@@ -83,11 +83,11 @@ msbuild /p:configuration=release shim3.sln
 goto done
 :wedge3
 if "%2"=="r" goto wedge3_release
-cd c:\users\trent\code\tth\wedge3\build
+cd c:\users\trent\code\wedge3\build
 msbuild /p:configuration=relwithdebinfo wedge3.sln
 goto done
 :wedge3_release
-cd c:\users\trent\code\tth\wedge3\build
+cd c:\users\trent\code\wedge3\build
 msbuild /p:configuration=release wedge3.sln
 goto done
 :tth

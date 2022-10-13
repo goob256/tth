@@ -223,6 +223,7 @@ void Title_GUI::update()
 
 void Title_GUI::do_speed_run(int levels)
 {
+	speedrun_start = SDL_GetTicks();
 	INSTANCE = new Globals::Instance(NULL);
 	INSTANCE->set_num_levels(levels);;
 	AREA = new Area_Game();

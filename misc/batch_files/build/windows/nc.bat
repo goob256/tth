@@ -75,7 +75,7 @@ goto done
 :wedge3
 del c:\users\trent\code\t\wedge3.dll
 cd c:\users\trent\code\tth\shim3
-cd c:\users\trent\code\tth\wedge3
+cd c:\users\trent\code\wedge3
 rmdir /s /q build
 mkdir build
 cd build
