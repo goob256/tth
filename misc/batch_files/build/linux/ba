@@ -7,12 +7,12 @@ fi
 CWD=`pwd`
 cd ~/code/tth
 rm "build/tth"
-cd tgui5/build
+cd ~/code/tth/tgui5/build
 make -j$NPROC
-cd ../../shim3/build
+cd ~/code/tth/shim3/build
 make -j$NPROC
-cd ../../wedge3/build
+cd ~/code/wedge3/build
 make -j$NPROC
-cd ../../build
+cd ~/code/tth/build
 make -j$NPROC
 cd $CWD

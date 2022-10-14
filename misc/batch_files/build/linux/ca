@@ -49,26 +49,25 @@ TTH_FLAGS="$FLAGS $TTH_FLAGS"
 
 pushd . > /dev/null
 
-cd ~/code/tth
-cd tgui5
+cd ~/code/tth/tgui5
 rm -rf build
 mkdir build
 cd build
 cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH;~/code/tth/shim3/external/SDL2_ttf-2.0.14" $TGUI_FLAGS
-cd ../../shim3
+cd ~/code/tth/shim3
 rm -rf build
 mkdir build
 cd build
 cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH;/usr/include/freetype2;/code/tth/shim3/external/SDL2_ttf-2.0.14;~/code/tth/tgui5/include" -DUSER_LIBRARY_PATH="~/code/tth/tgui5/build" $SHIM_FLAGS
-cd ../../wedge3
+cd ~/code/wedge3
 rm -rf build
 mkdir build
 cd build
 cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH;~/code/tth/shim3/external/SDL2_ttf-2.0.14;~/code/tth/tgui5/include;~/code/tth/shim3/include" -DUSER_LIBRARY_PATH="~/code/tth/tgui5/build;~/code/tth/shim3/build" $WEDGE_FLAGS
-cd ../..
+cd ~/code/tth
 rm -rf build
 mkdir build
 cd build
-cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH;~/code/tth/shim3/external/SDL2_ttf-2.0.14;~/code/tth/tgui5/include;~/code/tth/shim3/include;~/code/tth/wedge3/include" -DUSER_LIBRARY_PATH="~/code/tth/tgui5/build;~/code/tth/shim3/build;~/code/tth/wedge3/build;~/code/steamworks/redistributable_bin/linux64" $TTH_FLAGS
+cmake .. -DUSER_INCLUDE_PATH="$USER_INCLUDE_PATH;~/code/tth/shim3/external/SDL2_ttf-2.0.14;~/code/tth/tgui5/include;~/code/tth/shim3/include;~/code/wedge3/include" -DUSER_LIBRARY_PATH="~/code/tth/tgui5/build;~/code/tth/shim3/build;~/code/wedge3/build;~/code/steamworks/redistributable_bin/linux64" $TTH_FLAGS
 
 popd > /dev/null
