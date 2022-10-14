@@ -671,6 +671,18 @@ public:
 			
 				y = shim::screen_size.h-shim::tile_size*2-1;
 
+				Uint32 now = SDL_GetTicks();
+				Uint32 elapsed = now - speedrun_start;
+				int seconds_elapsed = elapsed / 1000;
+				int hours = seconds_elapsed / 60 / 60;
+				int minutes = (seconds_elapsed / 60) % 60;
+				int seconds = seconds_elapsed % 60;
+
+				char buf[1000];
+				snprintf(buf, 1000, "%02d:%02d:%02d", hours, minutes, seconds);
+
+				shim::font->draw(shim::white, buf, util::Point<float>(6, y));
+
 				TTH_GLOBALS->dice[5]->draw({float(shim::screen_size.w-shim::tile_size-6), float(shim::screen_size.h-shim::tile_size*2-1)});
 			
 				str = "";
