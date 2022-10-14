@@ -449,11 +449,6 @@ bool static_start(int sdl_init_flags)
 	
 	debug = root->get_nested_bool("shim>misc>debug", &debug, false);
 
-#ifdef STEAMWORKS
-	steam_overlay_activated_callback = nullptr;
-	util::start_steamworks();
-#endif
-
 	get_way_points = nullptr;
 
 	return true;
@@ -467,6 +462,12 @@ bool static_start_all(int sdl_init_flags)
 	if (util::static_start() == false) {
 		return false;
 	}
+
+#ifdef STEAMWORKS
+	steam_overlay_activated_callback = nullptr;
+	util::start_steamworks();
+#endif
+
 	if (audio::static_start() == false) {
 		return false;
 	}

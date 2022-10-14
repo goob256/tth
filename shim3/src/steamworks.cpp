@@ -16,52 +16,58 @@ class CSteamLeaderboards
 private:
 	uint64_t m_iAppID; // Our current AppID
 	bool m_bInitialized; // Have we called Request stats and received the callback?
+	bool done;
 
-	std::map<std::string, SteamLeaderboard_t> leaderboards;
+	SteamLeaderboard_t leaderboard;
+	
+	void load_leaderboard(std::string leaderbord_name);
 
 public:
-	CSteamLeaderboards();
+	CSteamLeaderboards(std::string leaderboard_name);
 	~CSteamLeaderboards() {}
 
-	void load_leaderboard(std::string leaderbord_name);
-	void set_leaderboard(std::string leaderboard_name, int value);
+	void set_score(int value);
 
 	void FoundLeaderboard(LeaderboardFindResult_t *result, bool bIOFailure);
 	CCallResult<CSteamLeaderboards, LeaderboardFindResult_t> m_callResultFindLeaderboard;
 };
 
-CSteamLeaderboards::CSteamLeaderboards() :
+CSteamLeaderboards::CSteamLeaderboards(std::string leaderboard_name) :
  m_iAppID( 0 ),
  m_bInitialized( false )
 {
      m_iAppID = SteamUtils()->GetAppID();
+
+     load_leaderboard(leaderboard_name);
 }
 
 void CSteamLeaderboards::load_leaderboard(std::string leaderboard_name)
 {
+	done = false;
 	SteamAPICall_t hSteamAPICall = SteamUserStats()->FindLeaderboard(leaderboard_name.c_str());
 	m_callResultFindLeaderboard.Set(hSteamAPICall, this, &CSteamLeaderboards::FoundLeaderboard);
+	while (done == false) {
+	};
 }
 
-void CSteamLeaderboards::set_leaderboard(std::string leaderboard_name, int value)
+void CSteamLeaderboards::set_score(int value)
 {
-	if (leaderboards.find(leaderboard_name) != leaderboards.end()) {
-		SteamUserStats()->UploadLeaderboardScore(leaderboards[leaderboard_name], k_ELeaderboardUploadScoreMethodKeepBest, value, nullptr, 0);
-	}
+	SteamUserStats()->UploadLeaderboardScore(leaderboard, k_ELeaderboardUploadScoreMethodKeepBest, value, nullptr, 0);
 }
 
 void CSteamLeaderboards::FoundLeaderboard( LeaderboardFindResult_t *pCallback, bool bIOFailure )
 {
  	if (pCallback->m_bLeaderboardFound == true) {
-		std::string name = SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard);
-		leaderboards[name] = pCallback->m_hSteamLeaderboard;
+		leaderboard = pCallback->m_hSteamLeaderboard;
+		util::debugmsg("Leaderboard found!\n");
 	}
 	else {
 		util::errormsg("Leaderboard not found!\n");
 	}
+	done = true;
 }
 
-static CSteamLeaderboards *g_SteamLeaderboards = NULL;
+std::map<std::string, CSteamLeaderboards *> g_SteamLeaderboards;
 
 //
 
@@ -242,7 +248,6 @@ bool start_steamworks()
 	if (bRet) {
 		g_SteamAchievements = new CSteamAchievements();
 		g_SteamOverlayDetect = new CSteamOverlayDetect();
-		g_SteamLeaderboards = new CSteamLeaderboards();
 		steam_language = SteamApps()->GetCurrentGameLanguage();
 		if (steam_language == "") {
 			steam_language = "english";
@@ -276,7 +281,7 @@ void load_steam_leaderboard(std::string leaderboard_name)
 	if (shim::steam_init_failed) {
 		return;
 	}
-	g_SteamLeaderboards->load_leaderboard(leaderboard_name);
+	g_SteamLeaderboards[leaderboard_name] = new CSteamLeaderboards(leaderboard_name);
 }
 
 void set_steam_leaderboard(std::string leaderboard_name, int value)
@@ -284,7 +289,7 @@ void set_steam_leaderboard(std::string leaderboard_name, int value)
 	if (shim::steam_init_failed) {
 		return;
 	}
-	g_SteamLeaderboards->set_leaderboard(leaderboard_name, value);
+	g_SteamLeaderboards[leaderboard_name]->set_score(value);
 }
 
 } // End namespace util
