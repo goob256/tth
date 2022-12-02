@@ -9,7 +9,7 @@ TGUI_PATH := ../../../../tgui5
 SHIM_PATH := ../../../../shim3
 WEDGE_PATH := ../../../../wedge3
 TTH_PATH := ../../../../../tth
-ANDROID_DIR := ../../../../../android.tth-dogo
+ANDROID_DIR := ../../../../../android.newer
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include \
 	$(LOCAL_PATH)/$(TGUI_PATH)/include \
